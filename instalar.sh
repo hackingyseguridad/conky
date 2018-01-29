@@ -2,8 +2,6 @@
 sudo apt-get install conky
 chmod 777 *
 cp * /etc/conky/
-cp /usr/bin/conky /etc/init.d/conky
-update-rc.d conky start
-update-rc.d conky defaults
-sudo /etc/init.d/conky restart
-
+cp /etc/conky/conky-inicio /etc/init.d/conky-inicio
+sudo update-rc.d conky-inicio start
+sudo update-rc.d conky-inicio defaults
